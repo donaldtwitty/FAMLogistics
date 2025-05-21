@@ -144,7 +144,8 @@ blockquote {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    min-height: 375px;
+    min-height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -154,8 +155,13 @@ blockquote {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the 0.5 to be darker/lighter */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 to be darker/lighter */
     z-index: 1;
+}
+
+.arrow-wrapper {
+    position: relative;
+    z-index: 2; /* must be higher than the overlay’s z-index of 1 */
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
