@@ -137,7 +137,7 @@ blockquote {
 
 /* Hero */
 
-#infinite {
+#home {
     background-color: #222;
     background-image: url(../img/FAMHeroSection.png);
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ blockquote {
     position: relative;
 }
 
-#infinite .overlay {
+#home .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -165,31 +165,31 @@ blockquote {
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
-    #infinite {
+    #home {
         background-size: cover;
     }
 }
 
 @media (min-height: 830px) {
-    #infinite {
+    #home {
         background-position: center -210px;
     }
 }
 
 @media (min-height: 680px) and (max-height: 829px) {
-    #infinite {
+    #home {
         background-position: center -300px;
     }
 }
 
 @media (min-height: 500px) and (max-height: 679px) {
-    #infinite {
+    #home {
         background-position: center -400px;
     }
 }
 
 @media (max-height: 499px) {
-    #infinite {
+    #home {
         background-position: center -450px;
     }
 }
