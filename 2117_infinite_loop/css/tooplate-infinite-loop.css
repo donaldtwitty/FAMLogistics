@@ -138,25 +138,31 @@ blockquote {
 /* Hero */
 
 #home {
-    background-color: #222;
+    /*background-color: #222;*/
     background-image: url(../img/FAMHeroSection.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     height: 100vh;
     min-height: 100vh;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 #home .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 to be darker/lighter */
     z-index: 1;
+    pointer-events: none;
 }
 
 .arrow-wrapper {
@@ -195,11 +201,14 @@ blockquote {
 }
 
 .tm-hero-text-container {
+    z-index: 2;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .tm-hero-text-container-inner {
