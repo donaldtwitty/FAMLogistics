@@ -142,7 +142,6 @@ blockquote {
     background-image: url(../img/FAMHeroSection.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     height: 100vh;
     min-height: 100vh;
     width: 100%;
@@ -368,7 +367,7 @@ blockquote {
 }
 
 .slick-dots {
-    bottom: -65px;
+    bottom: 1px;
 }
 
 .slick-dots li {
