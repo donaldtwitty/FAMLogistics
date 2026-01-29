@@ -48,7 +48,7 @@ blockquote {
 }
 
 .tm-text-primary {
-    color: #37A;
+    color: #0066cc;
 }
 
 .tm-font-big {
@@ -141,6 +141,7 @@ blockquote {
     background-image: url(../img/FAMHeroSection.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 100vh;
     min-height: 100vh;
     width: 100%;
@@ -174,27 +175,10 @@ blockquote {
     }
 }
 
-@media (min-height: 830px) {
+@media (max-width: 768px) {
     #home {
-        background-position: center -210px;
-    }
-}
-
-@media (min-height: 680px) and (max-height: 829px) {
-    #home {
-        background-position: center -300px;
-    }
-}
-
-@media (min-height: 500px) and (max-height: 679px) {
-    #home {
-        background-position: center -400px;
-    }
-}
-
-@media (max-height: 499px) {
-    #home {
-        background-position: center -450px;
+        background-position: center center;
+        background-size: cover;
     }
 }
 
@@ -735,3 +719,515 @@ p {
         margin: 0;
     }
 }
+
+/* About Section */
+#about {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.about-divider {
+    width: 80px;
+    height: 4px;
+    background: #0066cc;
+    margin: 20px auto;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-card-small {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-icon-large {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-right: 20px;
+}
+
+.about-icon-medium {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.about-icon-green {
+    color: #28a745;
+}
+
+.about-icon-yellow {
+    color: #ffc107;
+}
+
+.about-icon-blue {
+    color: #0066cc;
+}
+
+.about-heading {
+    margin: 0;
+    font-weight: 600;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.about-list-item:last-child {
+    border-bottom: none;
+}
+
+.about-chevron {
+    color: #0066cc;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+.about-performance {
+    background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    color: white;
+}
+
+.about-performance-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-performance-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-data-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    border-radius: 5px;
+}
+
+.about-data-label {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.about-data-value {
+    font-size: 1.1rem;
+}
+
+/* What We Do Section - Modern Design */
+#whatwedo {
+    background: #ffffff;
+}
+
+.whatwedo-intro {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.whatwedo-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.whatwedo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,102,204,0.15);
+}
+
+.whatwedo-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,102,204,0.3);
+}
+
+.whatwedo-icon {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.whatwedo-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0066cc;
+}
+
+.whatwedo-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #0066cc 0%, #004999 100%);
+    margin: 0 auto;
+}
+
+/* Stats/Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    border-color: #0066cc;
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Certifications Section - Modern Design */
+#certifications {
+    color: white;
+    background-image: url(../img/infinite-loop-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    #certifications {
+        background-image: url(../img/infinite-loop-02-mobile.jpg);
+    }
+}
+
+#certifications::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 70, 80, 0.2);
+    z-index: 0;
+}
+
+.certifications-content-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.cert-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cert-header h2 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cert-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+}
+
+.cert-divider {
+    width: 100px;
+    height: 4px;
+    background: white;
+    margin: 20px auto;
+}
+
+.cert-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.cert-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 400px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.cert-badge {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #0066cc;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cert-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cert-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.cert-check {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.cert-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cert-footer {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    .cert-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Contact Section - Modern Design */
+#contact {
+    background: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 40px 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid #e9ecef;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,102,204,0.15);
+    border-color: #0066cc;
+}
+
+.contact-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,102,204,0.3);
+}
+
+.contact-icon {
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: #0066cc;
+    transform: scale(1.05);
+}
+
+.modern-footer {
+    background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+    color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-tagline {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-copyright {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Remove inline styles */
+.navbar-logo {
+    height: 150px;
+}
+
+.about-heading-white {
+    color: white;
+}
+
+/* Override contact header h2 color to match h3 */
+.contact-header h2 {
+    color: #0066cc;
+}
+
