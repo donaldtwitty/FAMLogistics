@@ -124,4 +124,7 @@ $(function () {
             }
         ]
     });
+
+    // Update copyright year
+    $('#currentYear').text(new Date().getFullYear());
 });
